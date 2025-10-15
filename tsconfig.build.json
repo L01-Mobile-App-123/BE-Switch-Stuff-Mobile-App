@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@modules/*": ["src/modules/*"],
+      "@common/*": ["src/common/*"],
+      "@config/*": ["src/config/*"],
+      "@entities/*": ["src/entities/*"],
+      "@auth/*": ["src/auth/*"],
+      "@chat/*": ["src/chat/*"],
+      "@notifications/*": ["src/notifications/*"],
+      "@post/*": ["src/post/*"],
+      "@search/*": ["src/search/*"],
+      "@firebase/*": ["src/firebase/*"],
+      "@users/*": ["src/users/*"],
+    }
+  }
+}
