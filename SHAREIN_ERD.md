@@ -277,35 +277,10 @@ erDiagram
 
 ---
 
-## 📌 Ghi chú kỹ thuật
 
-### Indexes nên tạo:
-- `USER.email` (unique)
-- `POST.user_id`, `POST.category_id`, `POST.is_available`
-- `MESSAGE.conversation_id`, `MESSAGE.sent_at`
-- `NOTIFICATION.user_id`, `NOTIFICATION.is_read`
-- `USER_INTEREST.user_id`, `USER_INTEREST.category_id`
-
-### Xử lý Reputation Score:
-```sql
-reputation_score = total_votes_up - total_votes_down
-```
-
-### Soft Delete:
-- Nên áp dụng soft delete cho POST (thêm `deleted_at`)
-- Giữ lại dữ liệu để phân tích
-
----
-
-## 🚀 Giai đoạn mở rộng (Post-MVP)
-
-**Các entity có thể thêm sau:**
-- `TRANSACTION`: Quản lý giao dịch thanh toán
-- `REPORT`: Báo cáo bài đăng vi phạm
-- `FAVORITE`: Lưu bài đăng yêu thích
-- `DELIVERY`: Quản lý giao hàng
 
 ---
 
 ✍️ _Được tạo cho dự án ShareIn - L01_MobileApp - 10/2025_
+
 
